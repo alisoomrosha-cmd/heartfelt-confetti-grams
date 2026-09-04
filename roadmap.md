@@ -1,0 +1,3 @@
+- [ ] Inspect the current build output and Pages workflow
+- [ ] Fix the workflow artifact path/Jekyll step
+- [ ] Verify a production build creates the expected Pages artifact
