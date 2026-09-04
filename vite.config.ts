@@ -15,16 +15,9 @@ export default defineConfig({
   vite: {
     base,
   },
-  // GitHub Pages deploys a plain static folder, so pin nitro's output to .output/public.
-  nitro: isGitHubPages
-    ? {
-        output: {
-          dir: ".output",
-          publicDir: ".output/public",
-          serverDir: ".output/server",
-        },
-      }
-    : true,
+  // GitHub Pages deploys the prerendered static client folder (dist/client).
+  nitro: true,
+
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
