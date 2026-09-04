@@ -284,7 +284,6 @@ function BirthdaySite() {
                 <div className="bd-photo-mat">
                   <img src={photo} alt={`${N1} and ${N2} together`} loading="eager" />
                 </div>
-                <figcaption className="bd-badge">BIRTHDAY MEMORY ✨</figcaption>
               </figure>
             </Reveal>
             <Reveal delay={0.16}>
