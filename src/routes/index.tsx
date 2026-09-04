@@ -764,7 +764,8 @@ const CSS = `
   .bd-sprig{ opacity:.28; transform:scale(.8); }
   .bd-balloon{ transform:scale(.75); }
   .bd-page{ padding-bottom:130px; }
-  .bd-hero-heading{ flex-direction:column; gap:14px; }
+  .bd-hero-heading{ flex-direction:column; flex-wrap:wrap; gap:14px; }
+  .bd-hero-heading .bd-title{ font-size:clamp(34px,8.2vw,72px); }
   .bd-hero-photo{ order:-1; width:clamp(78px,22vw,110px); }
 }
 @media (prefers-reduced-motion:reduce){
