@@ -246,7 +246,7 @@ function BirthdaySite() {
                   HAPPY BIRTHDAY, {N1.toUpperCase()}! <span className="bd-emoji">🎂🤍</span>
                 </h1>
                 <div className="bd-hero-photo">
-                  <img src={iqraPhotoAsset.url} alt={N1} loading="eager" />
+                  <img src={birthdayData.iqraPhoto} alt={N1} loading="eager" />
                 </div>
               </div>
             </Reveal>
