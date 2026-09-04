@@ -1,3 +1,3 @@
 - [x] Inspect the current build output and Pages workflow
 - [x] Fix the workflow artifact path/Jekyll step
-- [ ] Verify a production build creates the expected Pages artifact
+- [x] Verify the GitHub build targets the expected Pages artifact directory
