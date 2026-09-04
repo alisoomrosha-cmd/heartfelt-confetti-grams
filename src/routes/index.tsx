@@ -8,7 +8,7 @@ import photoAsset from "@/assets/friends.jpg.asset.json";
 const birthdayData = {
   friendName: "Iqra",
   secondFriendName: "Sehar",
-  senderName: "YOUR NAME",
+  senderName: "ALI SHA",
   photo: photoAsset.url,
   personalMessage: "Your friendship matters to me.",
 };
