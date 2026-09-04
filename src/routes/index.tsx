@@ -236,9 +236,14 @@ function BirthdaySite() {
               <p className="bd-eyebrow">A VERY SPECIAL DAY FOR A VERY SPECIAL FRIEND</p>
             </Reveal>
             <Reveal delay={0.12}>
-              <h1 className="bd-title">
-                HAPPY BIRTHDAY, {N1.toUpperCase()}! <span className="bd-emoji">🎂🤍</span>
-              </h1>
+              <div className="bd-hero-heading">
+                <h1 className="bd-title">
+                  HAPPY BIRTHDAY, {N1.toUpperCase()}! <span className="bd-emoji">🎂🤍</span>
+                </h1>
+                <div className="bd-hero-photo">
+                  <img src={iqraPhotoAsset.url} alt={N1} loading="eager" />
+                </div>
+              </div>
             </Reveal>
             <Reveal delay={0.2}>
               <Ribbon className="bd-ribbon" />
