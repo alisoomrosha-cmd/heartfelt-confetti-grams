@@ -1,18 +1,23 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
-import photoAsset from "@/assets/friends.jpg.asset.json";
-import iqraPhotoAsset from "@/assets/iqra-photo.jpg.asset.json";
 
 /* ============================================================
    EASY CUSTOMIZATION
    ============================================================ */
+// Base-aware asset paths so images load both locally and on GitHub Pages
+// (served from /heartfelt-confetti-grams/).
+const BASE = import.meta.env.BASE_URL || "/";
+const asset = (file: string) => `${BASE.replace(/\/$/, "")}/images/${file}`;
+
 const birthdayData = {
   friendName: "Iqra",
   secondFriendName: "Sehar",
   senderName: "ALI SHA",
-  photo: photoAsset.url,
+  photo: asset("friends.jpg"),
+  iqraPhoto: asset("iqra-photo.jpg"),
   personalMessage: "Your friendship matters to me.",
 };
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -241,7 +246,7 @@ function BirthdaySite() {
                   HAPPY BIRTHDAY, {N1.toUpperCase()}! <span className="bd-emoji">🎂🤍</span>
                 </h1>
                 <div className="bd-hero-photo">
-                  <img src={iqraPhotoAsset.url} alt={N1} loading="eager" />
+                  <img src={birthdayData.iqraPhoto} alt={N1} loading="eager" />
                 </div>
               </div>
             </Reveal>
