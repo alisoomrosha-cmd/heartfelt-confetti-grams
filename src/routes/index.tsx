@@ -634,8 +634,9 @@ const CSS = `
 .bd-flame{ transform-origin:center; animation:bd-flicker 1.6s ease-in-out infinite; }
 @keyframes bd-flicker{50%{transform:scaleY(1.14) translateY(-2px); opacity:.85}}
 .bd-ribbon{ opacity:.9; }
-.bd-hero-heading{ display:flex; align-items:center; justify-content:center; gap:clamp(16px,4vw,32px); flex-wrap:wrap; }
-.bd-hero-photo{ flex:0 0 auto; width:clamp(86px,18vw,120px); aspect-ratio:3/4; border-radius:14px; overflow:hidden;
+.bd-hero-heading{ display:flex; align-items:center; justify-content:center; gap:clamp(14px,3vw,26px); flex-wrap:nowrap; }
+.bd-hero-heading .bd-title{ font-size:clamp(28px,6.2vw,58px); }
+.bd-hero-photo{ flex:0 0 auto; width:clamp(80px,13vw,110px); aspect-ratio:3/4; border-radius:14px; overflow:hidden;
   box-shadow:0 16px 34px -16px rgba(100,47,61,.55), 0 0 0 4px rgba(255,255,255,.7), 0 0 0 1px rgba(197,164,109,.5);
   animation:bd-photo 1.2s cubic-bezier(.22,.9,.24,1) both; animation-delay:.2s; }
 .bd-hero-photo img{ display:block; width:100%; height:100%; object-fit:cover; }
