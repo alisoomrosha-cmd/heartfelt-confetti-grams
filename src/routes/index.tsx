@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import photoAsset from "@/assets/friends.jpg.asset.json";
+import iqraPhotoAsset from "@/assets/iqra-photo.jpg.asset.json";
 
 /* ============================================================
    EASY CUSTOMIZATION
