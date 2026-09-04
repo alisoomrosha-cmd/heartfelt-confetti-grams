@@ -763,6 +763,8 @@ const CSS = `
   .bd-sprig{ opacity:.28; transform:scale(.8); }
   .bd-balloon{ transform:scale(.75); }
   .bd-page{ padding-bottom:130px; }
+  .bd-hero-heading{ flex-direction:column; gap:14px; }
+  .bd-hero-photo{ order:-1; width:clamp(78px,22vw,110px); }
 }
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important}
