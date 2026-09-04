@@ -36,7 +36,7 @@ jobs:
         run: npm run build
 
       - name: Disable Jekyll processing
-        run: touch ./.output/public/.nojekyll
+        run: touch ./dist/client/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -44,7 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.output/public
+          path: ./dist/client
 
   deploy:
     environment:
