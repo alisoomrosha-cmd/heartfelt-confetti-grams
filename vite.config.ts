@@ -15,7 +15,7 @@ export default defineConfig({
   vite: {
     base,
   },
-  // GitHub Pages deploys the prerendered static client folder (dist/client).
+  // GitHub Pages deploys the prerendered static output from .output/public.
   nitro: true,
 
   tanstackStart: {
